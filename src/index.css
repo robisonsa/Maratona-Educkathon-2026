@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Space Grotesk", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  
+  --color-background: #050505;
+  --color-surface: #111111;
+  --color-surface-hover: #1a1a1a;
+  --color-primary: #00FFCC;
+  --color-secondary: #7000FF;
+  --color-accent: #0066FF;
+}
+
+body {
+  background-color: var(--color-background);
+  color: #ffffff;
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+/* Tech grid background */
+.bg-grid-pattern {
+  background-image: linear-gradient(to right, rgba(255,255,255,0.05) 1px, transparent 1px),
+                    linear-gradient(to bottom, rgba(255,255,255,0.05) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+/* Neon glow utilities */
+.glow-primary {
+  box-shadow: 0 0 20px rgba(0, 255, 204, 0.3);
+}
+.glow-text {
+  text-shadow: 0 0 10px rgba(0, 255, 204, 0.5);
+}
